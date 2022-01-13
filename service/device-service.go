@@ -39,3 +39,7 @@ func (s *DeviceService) WriteOptimalCapacityToFile(path string, filename string,
 	file.WriteLines(path, filename, lines)
 }
 
+func CreateNewDeviceService() *DeviceService{
+	return &DeviceService{}
+}
+
